@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +20,8 @@
 
 </body>
 </html>
+
+
 <!--------------------------------------------------------------------->
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -27,20 +29,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciador de Finanças</title>
+    <script src="script.js"></script> <!-- Falta eu conseguir botar as atividades do javacript para o html -->
 </head>
 <body>
     <h1>Gerenciamento de Finanças</h1>
-    <img src=""
+    <!--Tentar colocar a imagem de novo depois <img src="dinheiro."> -->
     <a href="index.html">
         <button>
             Inicio
         </button>
     </a>
+    
+    <!-- Teste de javascript -->
+    <div id="educacao">
+        <button>
+            Como se diz?!
+        </button>
+        
+    </div>
+    
+<!-- Vou usar tabela com o extrato -->
+    <table border="10px">
+        <td></td>
+        <td>Conta X</td>
+        <td>Conta Y</td>
+        <td>Conta Z</td>
+        
+        <tr>
+            <th>Dia/Mês/Ano</th>
+            <th>- 30 reais</th>
+            <th>+30 reais</th>
+            <th>Sem Mudança</th>
+        </tr>
+
+        <tr>
+            <th>Saldo Atual</th>
+            <th>0 reais</th>
+            <th>30 reais</th>
+            <th>0 reias</th>
+        </tr>
+    </table>
+
     <br>Bem vindo, ${Nome}. Espero que esteja bem. 
     <br>Qual será a sua atividade de hoje?
 </body>
 </html>
 <!--------------------------------------------------------------------->
+document.getElementById("educacao").onclick = function(){
+alert('Por favor. Bom dia. Obrigado');
+ }  //Falta eu conseguir botar as atividades do javacript para o html
+// Teste de Javascript
+
 <script>
       var Recebimento = window.prompt("Digite quanto dinheiro você recebeu");
       var Recebimento = parseFloat(Recebimento);
@@ -64,3 +103,5 @@
     background-color: rgb(0, 255, 98)
     
 }
+<!--------------------------------------------------------------------->
+https://img.magnific.com/fotos-premium/notas-de-dinheiro-brasileiro-conceito-de-financas-brasileiras_259266-2962.jpg?w=2000
