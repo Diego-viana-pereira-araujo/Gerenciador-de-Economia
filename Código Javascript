@@ -23,80 +23,69 @@
 
 
 <!--------------------------------------------------------------------->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gerenciador de Finanças</title>
-    <script src="script.js"></script> <!-- Falta eu conseguir botar as atividades do javacript para o html -->
-</head>
-<body>
+    <!-- Falta eu conseguir botar as atividades do javacript para o html -->
+  </head>
+  <body>
     <h1>Gerenciamento de Finanças</h1>
     <!--Tentar colocar a imagem de novo depois <img src="dinheiro."> -->
     <a href="index.html">
-        <button>
-            Inicio
-        </button>
+      <button>Inicio</button>
     </a>
-    
-    <!-- Teste de javascript -->
-    <div id="educacao">
-        <button>
-            Como se diz?!
-        </button>
-        
-    </div>
-    
-<!-- Vou usar tabela com o extrato -->
-    <table border="10px">
-        <td></td>
-        <td>Conta X</td>
-        <td>Conta Y</td>
-        <td>Conta Z</td>
-        
-        <tr>
-            <th>Dia/Mês/Ano</th>
-            <th>- 30 reais</th>
-            <th>+30 reais</th>
-            <th>Sem Mudança</th>
-        </tr>
 
-        <tr>
-            <th>Saldo Atual</th>
-            <th>0 reais</th>
-            <th>30 reais</th>
-            <th>0 reias</th>
-        </tr>
+
+    <!-- Vou usar tabela com o extrato -->
+    <table border="10px">
+      <td></td>
+      <td>Conta X</td>
+      <td>Conta Y</td>
+      <td>Conta Z</td>
+
+      <tr>
+        <th>Dia/Mês/Ano</th>
+        <th>- 30 reais</th>
+        <th>+30 reais</th>
+        <th>Sem Mudança</th>
+      </tr>
+
+      <tr>
+        <th>Saldo Atual</th>
+        <th>0 reais</th>
+        <th>30 reais</th>
+        <th>0 reias</th>
+      </tr>
     </table>
 
-    <br>Bem vindo, ${Nome}. Espero que esteja bem. 
-    <br>Qual será a sua atividade de hoje?
-</body>
+    <br />Bem vindo, ${Nome}. Espero que esteja bem. <br />Qual será a sua
+    atividade de hoje?
+    <script src="script.js"></script>
+  </body>
 </html>
+
 <!--------------------------------------------------------------------->
-document.getElementById("educacao").onclick = function(){
-alert('Por favor. Bom dia. Obrigado');
- }  //Falta eu conseguir botar as atividades do javacript para o html
-// Teste de Javascript
+// {
+//       var Recebimento = window.prompt("Digite quanto dinheiro você recebeu");
+//       var Recebimento = parseFloat(Recebimento);
 
-<script>
-      var Recebimento = window.prompt("Digite quanto dinheiro você recebeu");
-      var Recebimento = parseFloat(Recebimento);
+//       var Lazer = Recebimento * 0.1;
+//       var Cofre = Recebimento * 0.9;
 
-      var Lazer = Recebimento * 0.1;
-      var Cofre = Recebimento * 0.9;
+//       document.write("<h2>Seu saldo atual:</h2>");
+//       document.write(`Conta Lazer: R$ ${Lazer.toFixed(2)} reais<br>`);
+//       document.write(`Conta Cofre: R$ ${Cofre.toFixed(2)} reais<br>`);
+//       document.write(
+//         "<br><strong>Legenda:</strong><br>Conta lazer é destinada a comprar coisas que sejam agradaveis ao usuario<br>Conta cofre é destinada a polpar o dinheiro para poder ser gasto com algo grande e/ou importante no futuro",
+//       );
 
-      document.write("<h2>Seu saldo atual:</h2>");
-      document.write(`Conta Lazer: R$ ${Lazer.toFixed(2)} reais<br>`);
-      document.write(`Conta Cofre: R$ ${Cofre.toFixed(2)} reais<br>`);
-      document.write(
-        "<br><strong>Legenda:</strong><br>Conta lazer é destinada a comprar coisas que sejam agradaveis ao usuario<br>Conta cofre é destinada a polpar o dinheiro para poder ser gasto com algo grande e/ou importante no futuro",
-      );
+//       var nomeUser = getElementById("nomeUsuario");
+//       document.write(`Nome do usuario: ${nomeUser}`);
+// }
 
-      var nomeUser = getElementById("nomeUsuario");
-      document.write(`Nome do usuario: ${nomeUser}`);
-    </script>
 <!--------------------------------------------------------------------->
 {
 
