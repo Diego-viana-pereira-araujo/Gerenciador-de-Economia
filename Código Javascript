@@ -44,7 +44,15 @@
       <button>Inicio</button>
     </a>
 
-
+    <br />Bem vindo, ${Nome}. Espero que esteja bem. <br />Qual será a sua
+    atividade de hoje?
+    
+    <!--Opcões-->
+    <p><button>Adicionar</button></p>
+    <p><button>Retirar</button></p>
+    <p><button>Visualizar atual</button></p>
+    <p><button>Visualizar tudo</button></p>
+    
     <!-- Vou usar tabela com o extrato -->
     <table border="10px">
       <td></td>
@@ -66,12 +74,10 @@
         <th>0 reias</th>
       </tr>
     </table>
-
-    <br />Bem vindo, ${Nome}. Espero que esteja bem. <br />Qual será a sua
-    atividade de hoje?
     <script src="script.js"></script>
   </body>
 </html>
+
 
 <!--------------------------------------------------------------------->
 
