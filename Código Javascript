@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -10,16 +11,21 @@
     <h1>Preenchimentos de entrada</h1>
     <form>
       <label for="name">Nome do Usuário:</label>
-      <input type="name" placeholder="Digite seu nome" id="nomeUsuario" />
+      <input type="text" placeholder="Digite seu nome" id="name" />
+        <button id="Botao">
+          Enviar
+        </button>
     </form>
     <a href="gerenciar.html">
       <button>
         Entrar
       </button>
     </a>
-
+    <script src="script.js"></script>
 </body>
 </html>
+
+
 
 
 <!--------------------------------------------------------------------->
@@ -68,23 +74,37 @@
 </html>
 
 <!--------------------------------------------------------------------->
+
+
+var e = window.document.getElementById('Botao');
+e.addEventListener('click', mostrarNomeUsuario);
+function mostrarNomeUsuario(){
+  const formData = new FormData(window.document.getElementById('form'));
+  const inputValue = formData.get("name");
+  console.log(inputValue);
+  // alert(window.document.getElementById('name'));
+  // alert(inputValue);
+}
+
 // {
-//       var Recebimento = window.prompt("Digite quanto dinheiro você recebeu");
-//       var Recebimento = parseFloat(Recebimento);
+// var Recebimento = window.prompt("Digite quanto dinheiro você recebeu");
+// var Recebimento = parseFloat(Recebimento);
 
-//       var Lazer = Recebimento * 0.1;
-//       var Cofre = Recebimento * 0.9;
+// var Lazer = Recebimento * 0.1;
+// var Cofre = Recebimento * 0.9;
 
-//       document.write("<h2>Seu saldo atual:</h2>");
-//       document.write(`Conta Lazer: R$ ${Lazer.toFixed(2)} reais<br>`);
-//       document.write(`Conta Cofre: R$ ${Cofre.toFixed(2)} reais<br>`);
-//       document.write(
-//         "<br><strong>Legenda:</strong><br>Conta lazer é destinada a comprar coisas que sejam agradaveis ao usuario<br>Conta cofre é destinada a polpar o dinheiro para poder ser gasto com algo grande e/ou importante no futuro",
-//       );
+// document.write("<h2>Seu saldo atual:</h2>");
+// document.write(`Conta Lazer: R$ ${Lazer.toFixed(2)} reais<br>`);
+// document.write(`Conta Cofre: R$ ${Cofre.toFixed(2)} reais<br>`);
+// document.write(
+// "<br><strong>Legenda:</strong><br>Conta lazer é destinada a comprar coisas que sejam agradaveis ao usuario<br>Conta cofre é destinada a polpar o dinheiro para poder ser gasto com algo grande e/ou importante no futuro",
+// );
 
-//       var nomeUser = getElementById("nomeUsuario");
-//       document.write(`Nome do usuario: ${nomeUser}`);
+// var nomeUser = getElementById("nomeUsuario");
+// document.write(`Nome do usuario: ${nomeUser}`);
 // }
+
+
 
 <!--------------------------------------------------------------------->
 {
